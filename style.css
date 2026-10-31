@@ -1,137 +1,257 @@
-.body{
 
+body {
+    margin: 0;
+    background-color: white;
+    overflow-x: hidden;
+}
+
+.body {
     background-image: url('https://static.vecteezy.com/system/resources/previews/027/002/077/large_2x/airplane-in-the-airport-at-sunset-with-reflection-on-the-ground-a-large-jetliner-taking-landing-an-airport-runway-at-sunset-or-dawn-with-the-landing-gear-down-ai-generated-free-photo.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-
+    background-position: center;
 }
 
-.container-1{
- 
+.container-1 {
     width: 100%;
-    height: auto;
+    min-height: 600px;
     margin: auto;
 }
 
-.head1{
-
+.head1 {
     text-align: center;
-    padding-top: 220px;
+    padding-top: 180px;
     color: white;
     font-size: 35px;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: system-ui, sans-serif;
 }
 
-.paragraph{
-
+.paragraph {
     text-align: center;
     color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', Calibri, sans-serif;
     font-weight: bolder;
 }
 
-.container-2{
+.container-2 {
     text-align: center;
+    padding-bottom: 30px;
 }
-.services{
 
-    
+.services {
     text-decoration: none;
     border: 2px solid white;
-    width: 150px;
-    height:50px;
-    text-align: center;
+    padding: 15px 20px;
     margin: 10px;
     background-color: transparent;
     color: white;
     font-weight: bold;
+    cursor: pointer;
 }
 
-.services:hover{
-
+.services:hover {
     background-color: #EBA715;
     color: #DDEB15;
     transition: 0.8s;
 }
 
-.main{
-
+.main {
     width: 100%;
-    height: 600px;    
+    height: auto;
+    overflow: auto;
+    padding: 20px;
 }
 
-.child-1{
-
-    width: 32%;
-    height:600px;
+.child-1,
+.child-2,
+.child-3 {
+    width: 31%;
+    height: 600px;
     float: left;
     text-align: center;
-    margin: 10px;
+    margin: 1%;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
     background-color: white;
-
 }
 
-.img{
-
+.img {
     width: 100%;
-    height: 300px;
+    height: 280px;
+    object-fit: cover;
 }
 
-.head2{
-
+.head2 {
     text-align: center;
     font-size: 25px;
 }
 
-.p2{
-
+.p2 {
     text-align: center;
     opacity: 40%;
-    margin-top: 50px    ;
+    margin-top: 40px;
+    padding: 0px 15px;
     font-size: 15px;
-
 }
 
-.button{
-
+.button {
+    text-decoration: none;
     background-color: darkgray;
-    width: 100px;
-    height: 30px;
-    margin-top: 50px ;
+    padding: 12px 25px;
+    margin-top: 30px;
     color: white;
     border: 0px;
 }
 
-.button:hover{
-
+.button:hover {
     background-color: #EBA715;
     color: #000;
     transition: 0.8s;
-    border: 0px;
 }
 
-.child-2{
+@media screen and (max-width: 1200px) {
 
-    width: 32%;
-    height:600px;
-    float: left;
-    margin: 10px;
-    text-align: center;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
-    border-radius: 5px;
-    background-color: white;
+    .child-1,
+    .child-2,
+    .child-3 {
+        width: 31%;
+    }
+
 }
 
-.child-3{
+@media screen and (max-width: 1024px) {
 
-    width: 31%;
-    height: 600px;
-    float:left;
-    margin: 10px;
-    text-align: center;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
-    border-radius: 5px;
-    background-color: white;
+    .child-1,
+    .child-2,
+    .child-3 {
+        width: 48%;
+    }
+
+    .head1 {
+        font-size: 32px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .container-1 {
+        min-height: 550px;
+    }
+
+    .head1 {
+        font-size: 30px;
+        padding-top: 150px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .child-1,
+    .child-2,
+    .child-3 {
+        width: 96%;
+        margin: 2%;
+    }
+
+    .head1 {
+        font-size: 27px;
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+
+    .container-1 {
+        min-height: 500px;
+    }
+
+    .head1 {
+        font-size: 24px;
+        padding-top: 130px;
+    }
+
+    .paragraph {
+        font-size: 14px;
+        padding: 0px 15px;
+    }
+
+    .services {
+        padding: 12px 15px;
+        margin: 5px;
+    }
+
+    .main {
+        padding: 10px;
+    }
+
+    .child-1,
+    .child-2,
+    .child-3 {
+        width: 96%;
+        height: 550px;
+    }
+
+    .img {
+        height: 250px;
+    }
+
+    .head2 {
+        font-size: 22px;
+    }
+
+    .p2 {
+        margin-top: 30px;
+        padding: 0px 12px;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+
+    .head1 {
+        font-size: 22px;
+    }
+
+    .services {
+        font-size: 12px;
+        padding: 12px;
+    }
+
+    .head2 {
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+
+    .head1 {
+        font-size: 20px;
+    }
+
+    .paragraph {
+        font-size: 12px;
+    }
+
+    .services {
+        font-size: 11px;
+        padding: 10px;
+    }
+
+    .child-1,
+    .child-2,
+    .child-3 {
+        height: 530px;
+    }
+
+    .head2 {
+        font-size: 19px;
+    }
+
+    .p2 {
+        font-size: 13px;
+    }
+
 }
